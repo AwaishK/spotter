@@ -125,4 +125,4 @@ This provides views for the django app.
     - Return the calculated route, optimal stops, and total cost as a JSON response.
 
 
-
+Loom: https://www.loom.com/share/3efaed8054334400824734e44037a281?sid=e68cfcce-1c16-4711-a77b-d267703519f9

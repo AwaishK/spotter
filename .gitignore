@@ -1,0 +1,5 @@
+fuel-prices-for-be-assessment.csv
+.env
+env/*
+*/__pycache__/*
+*.pyc

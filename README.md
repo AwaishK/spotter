@@ -41,13 +41,22 @@ source env/bin/activate
 pip install -r requirements   
 ```
 
-2. **Run the following command to navigate to the `fuel_optimizer` Django project directory**
+2. **Set up the required environment variables:**
+   
+**Add the following variables to a `.env` file in the project directory. The script will automatically load them.**
+
+   ```bash
+   OPENROUTESERVICE_API_KEY="your_api_key_here"
+   FUEL_PRICES_FILEPATH="path_to_your_csv_file.csv"
+   ```
+
+3. **Run the following command to navigate to the `fuel_optimizer` Django project directory**
 
 ```bash
 cd fuel_optimizer
 ```
 
-3. **Run the following command to start django server and then test it.**
+4. **Run the following command to start django server and then test it.**
 
 ```bash
 python manage.py runserver 
@@ -85,17 +94,6 @@ This script automates the process of geocoding fuel station addresses and storin
 
 4. **Execution:**
    - The script reads the file path from the `FUEL_PRICES_FILEPATH` environment variable and processes the CSV file by calling the `geocode_and_store_fuel_stations(csv_file_path)` function.
-
-## Usage
-
-1. **Set up the required environment variables:**
-   
-**Add the following variables to a `.env` file in the project directory. The script will automatically load them.**
-
-   ```bash
-   OPENROUTESERVICE_API_KEY="your_api_key_here"
-   FUEL_PRICES_FILEPATH="path_to_your_csv_file.csv"
-   ```
 
 
 # Utilities Module (`utils.py`)

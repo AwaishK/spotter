@@ -23,7 +23,6 @@
 │   │   │── manage.py  
 │   │   │── fuel-prices-for-be-assessment.csv  
 │   │── README.md  
-│   │── Makefile  
 │   │── requirements.txt  
 │   │── .env  
 │   │── env  
